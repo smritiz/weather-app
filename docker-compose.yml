@@ -1,5 +1,5 @@
 services:
-  express: #name of the second service
+  wether-app: #name of the second service
     build: wether-app # specify the directory of the Dockerfile
     ports:
       - "3002:3002" #specify ports forewarding
