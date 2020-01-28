@@ -1,9 +1,9 @@
-services:
+services :
  wether-app:
   build:
         context: .
         dockerfile: Dockerfile
         networks:
-          - blockmyshownet
+          - wether-app
         ports:
             - "3002:3002"
