@@ -1,0 +1,10 @@
+services:wether app
+  express: #name of the second service
+    build: wether-app # specify the directory of the Dockerfile
+    ports:
+      - "3002:3002" #specify ports forewarding
+
+  database: # name of the third service
+    image: mongo # specify image to build container from
+    ports:
+      - "27017:27017" # specify port forewarding
