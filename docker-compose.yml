@@ -1,4 +1,4 @@
-services:wether app
+services:
   express: #name of the second service
     build: wether-app # specify the directory of the Dockerfile
     ports:
