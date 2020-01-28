@@ -1,5 +1,5 @@
 services :
- wether-app:
+ WEATHER-APP:
   build:
         context: .
         dockerfile: Dockerfile
