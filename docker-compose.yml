@@ -1,9 +1,9 @@
 services:
  wether-app:
-    build: .
-    command: npm start
-    volumes:
-     - ./vote:/app
-    ports:
-      - "3002:3002"
-  
+  build:
+        context: .
+        dockerfile: Dockerfile
+        networks:
+          - blockmyshownet
+        ports:
+            - "3002:3002"
